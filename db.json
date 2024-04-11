@@ -41,6 +41,24 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Venusaur",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
+      "price": "100",
+      "id": 11
+    },
+    {
+      "name": "Blastoise",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
+      "price": "0.03",
+      "id": 12
+    },
+    {
+      "name": "Blastoise",
+      "image": "https://nearlynakedveg.co.uk/cdn/shop/products/Depositphotos_169272482_S_720x@2x.jpg?v=1681411963",
+      "price": "0.02",
+      "id": 13
     }
   ]
 }
