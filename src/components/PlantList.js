@@ -11,6 +11,7 @@ useEffect (()=>{
 },[])
  const mappedPlants = plants.map (plant =>{
   return <PlantCard key ={plant.id} plant ={plant} name={plant.name} price={plant.price} image = {plant.image}/>
+  ///why is it plan and not plants because we use plants as a param for the .map ?
  })
   return (
     <ul className="cards">{mappedPlants}</ul>

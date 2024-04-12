@@ -6,17 +6,17 @@ import { useState } from "react";
 
 function PlantPage() {
   const [plants, setPlants] =useState ([])
-  const [search, setSearch] =useState('plaaa')
+  const [search, setSearch] =useState('')
   function createPlant(newPlant){
     setPlants([...plants, newPlant])
 
   }
- 
+ const filteredPlants = plants.filter(plants =>plants.name.toLowerCase().includes(search))
   return (
     <main>
-      <NewPlantForm plants ={plants} setPlants={setPlants} createPlant = {createPlant}/>
+      <NewPlantForm createPlant = {createPlant}/>
       <Search plants ={plants} setPlants={setPlants} search={search} setSearch={setSearch}/>
-      <PlantList plants ={plants} setPlants={setPlants}/>
+      <PlantList plants ={filteredPlants} setPlants={setPlants}/>
     </main>
   );
 }
